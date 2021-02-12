@@ -10,6 +10,7 @@ function BeerDetails(props) {
       <h3>Name: {beer.name}</h3>
       <h3>Brand: {beer.brand}</h3>
       <h4>Price: {beer.price}</h4>
+      <h4>Pints Remaining: {beer.pints}</h4>
       <h4>ABV: {beer.alcoholContent}</h4>
     </React.Fragment>
   );
