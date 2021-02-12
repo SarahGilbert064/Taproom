@@ -50,7 +50,41 @@ class StoreControl extends React.Component {
     });
   }
 
+  render() {
+    let currentlyVisibleState = null;
+    let buttonText = null;
 
+    if(this.state.selectedBeer != null) {
+      currentlyVisibleState =
+      <BeerDetails
+      beer = {this.state.selectedBeer}
+      onClickingDelete = {this.handleDeletingBeer}
+      />;
+      buttonText = "Return to Beer List";
+    } else if (this.state.formVisibleOnPage) {
+      currentlyVisibleState =
+      <NewBeerForm
+      onNewBeerCreation = {this.handleAddingNewBeerToList}
+      />;
+      buttonText = "Return to Beer List";
+    } else {
+      currentlyVisibleState =
+      <BeerList
+      beerList = {this.state.masterBeerList}
+      onBeerSelection = {this.handleChangingSelectedBeer}
+      />;
+      buttonText = "Add Beer";
+    }
+
+    return(
+      <React.Fragment>
+        {currentlyVisibleState}
+        <button onClick = {this.handleClick}>{buttonText}</button>
+      </React.Fragment>
+    );
+  }
 }
+
+export default StoreControl;
 
 
