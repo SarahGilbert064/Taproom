@@ -1,13 +1,17 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
+
 function Beer(props) {
   const myStyledBeer = {
     backgroundColor: '#D27810',
     border: '12px black',
     padding: '34px',
     borderStyle:'groove',
-    borderRadius: '30%/ 100%'
+    borderRadius: '30%/ 100%',
+    float: 'right',
+    width: '35%',
+    margin: '100px'
   }
 
   return(

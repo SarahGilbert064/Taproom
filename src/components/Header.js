@@ -6,7 +6,10 @@ function Header() {
     border: '12px black',
     padding: '34px',
     borderStyle:'groove',
-    borderRadius: '30%/ 100%'
+    borderRadius: '50%/100%',
+    width: '35%',
+    margin: '100px',
+    float: 'left'
   }
   return (
     <React.Fragment>
