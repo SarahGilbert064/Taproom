@@ -1,6 +1,7 @@
 import React from 'react';
 import { v4 } from 'uuid';
 import Proptypes from "prop-types";
+import ReusableForm from './ResuableForm';
 
 function NewBeerForm(props) {
 
@@ -18,7 +19,9 @@ function NewBeerForm(props) {
 
   return (
     <React.Fragment>
-      
+      <ReusableForm
+      formSubmissionHandler = {handleNewBeerFormSubmission}
+      buttonText = "Add Beer"/>
     </React.Fragment>
   );
 }

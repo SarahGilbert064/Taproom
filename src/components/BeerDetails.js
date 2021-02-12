@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Beer from "./Beer";
+
 
 function BeerDetails(props) {
+  const { beer, onClickingDelete, onClickingBuy } = props;
 
   return(
     <React.Fragment>
@@ -12,12 +13,19 @@ function BeerDetails(props) {
       <h4>Price: {beer.price}</h4>
       <h4>Pints Remaining: {beer.pints}</h4>
       <h4>ABV: {beer.alcoholContent}</h4>
+      <br/>
+      <button onClick = {() => onClickingDelete(beer.id) }>Discontinue Beer</button>
+      <br/>
+      <button onClick = {() => onClickingBuy() }>Buy a Pint</button>
+      <hr/>
     </React.Fragment>
   );
 }
 
 BeerDetails.PropTypes = {
   beer: PropTypes.object,
+  onClickingDelete: PropTypes.func,
+  onClickingBuy: PropTypes.func
 }
 
 export default BeerDetails;

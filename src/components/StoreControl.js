@@ -50,6 +50,18 @@ class StoreControl extends React.Component {
     });
   }
 
+  handleBuyingBeer = () => {
+    const selectedBeer = this.state.selectedBeer;
+    const newQuantity = Object.assign({}, selectedBeer, {pints: selectedBeer.pints - 1});
+    const newBeerList = this.state.masterBeerList
+      .filter(beer => beer.id !== this.state.selectedBeer.id)
+      .concat(newQuantity);
+    this.setState({
+      masterBeerList: newBeerList,
+      selectedBeer: newQuantity
+    });  
+  }
+
   render() {
     let currentlyVisibleState = null;
     let buttonText = null;
@@ -59,6 +71,7 @@ class StoreControl extends React.Component {
       <BeerDetails
       beer = {this.state.selectedBeer}
       onClickingDelete = {this.handleDeletingBeer}
+      onClickingBuy = {this.handleBuyingBeer}
       />;
       buttonText = "Return to Beer List";
     } else if (this.state.formVisibleOnPage) {
