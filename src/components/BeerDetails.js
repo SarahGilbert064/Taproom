@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 function BeerDetails(props) {
   const { beer, onClickingDelete, onClickingBuy } = props;
-
+  
   return(
     <React.Fragment>
       <h1>Beer Details:</h1>

@@ -3,6 +3,7 @@ import Beer from './Beer';
 import PropTypes from 'prop-types';
 
 function BeerList(props) {
+  
   return(
     <React.Fragment>
       <hr/>
