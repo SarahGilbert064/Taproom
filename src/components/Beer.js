@@ -1,4 +1,4 @@
-import React from './react';
+import React from 'react';
 import PropTypes from "prop-types";
 
 function Beer(props) {
@@ -7,15 +7,15 @@ function Beer(props) {
       <div onClick = {() => props.whenBeerClicked(props.id)}>
         <h3>{props.brand} Presents:</h3>
         <h3>{props.name}</h3>
-        <h3>{props.pints}</h3>
+        <h3>Pints Remaining: {props.pints}</h3>
         <h4> Cost per Pint: {props.price} </h4>
-        <p> ABV: {props.alcoholContent} </p>
+        <h4>ABV: {props.alcoholContent}</h4>
       </div>
     </React.Fragment>
   );
 }
 
-Beer.PropTypes = {
+Beer.propTypes = {
   name: PropTypes.string,
   brand: PropTypes.string, 
   price: PropTypes.string,

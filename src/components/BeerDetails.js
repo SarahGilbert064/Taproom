@@ -22,7 +22,7 @@ function BeerDetails(props) {
   );
 }
 
-BeerDetails.PropTypes = {
+BeerDetails.propTypes = {
   beer: PropTypes.object,
   onClickingDelete: PropTypes.func,
   onClickingBuy: PropTypes.func

@@ -36,9 +36,9 @@ function ReusableForm(props) {
   );
 }
 
-ReusableForm.PropTypes = {
-  formSubmissionHandler: PropTypes.func
-  // buttonTest: PropTypes.string
+ReusableForm.propTypes = {
+  formSubmissionHandler: PropTypes.func,
+  buttonText: PropTypes.string
 }
 
 export default ReusableForm;

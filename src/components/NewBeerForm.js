@@ -10,9 +10,9 @@ function NewBeerForm(props) {
     props.onNewBeerCreation({
       name: event.target.name.value,
       brand: event.target.brand.value,
-      price: event.target.brand.value,
+      price: event.target.price.value,
       pints: event.target.pints.value,
-      alcoholContent: event.target.brand.value,
+      alcoholContent: event.target.alcoholContent.value,
       id: v4()
     });
   }
@@ -30,4 +30,4 @@ NewBeerForm.propTypes = {
   onNewBeerCreation: Proptypes.func
 };
 
-export default NewTicketForm;
+export default NewBeerForm;
