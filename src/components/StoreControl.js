@@ -52,6 +52,7 @@ class StoreControl extends React.Component {
 
   handleBuyingBeer = () => {
     const selectedBeer = this.state.selectedBeer;
+    if (selectedBeer.pints <= 124 && selectedBeer.pints > 0) {
     const newQuantity = Object.assign({}, selectedBeer, {pints: selectedBeer.pints - 1});
     const newBeerList = this.state.masterBeerList
       .filter(beer => beer.id !== this.state.selectedBeer.id)
@@ -60,6 +61,17 @@ class StoreControl extends React.Component {
       masterBeerList: newBeerList,
       selectedBeer: newQuantity
     });  
+  } else {
+    const newQuantity = Object.assign({}, selectedBeer, {outOfStock: selectedBeer.outOfStock = "You are out of beer!"});
+    const newBeerList = this.state.masterBeerList
+      .filter(beer => beer.id !== this.state.selectedBeer.id)
+      .concat(newQuantity);
+    this.setState({
+      masterBeerList: newBeerList,
+      selectedBeer: newQuantity
+    });
+  }
+
   }
 
   render() {

@@ -7,7 +7,6 @@ function Header() {
     padding: '34px',
     borderStyle:'groove',
     borderRadius: '30%/ 100%'
-    
   }
   return (
     <React.Fragment>
