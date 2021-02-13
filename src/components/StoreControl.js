@@ -102,10 +102,8 @@ class StoreControl extends React.Component {
 
     return(
       <React.Fragment>
-        <div id="button">
-          {currentlyVisibleState}
-          <button onClick = {this.handleClick}>{buttonText}</button>
-        </div>
+        {currentlyVisibleState}
+        <button onClick = {this.handleClick}>{buttonText}</button>
       </React.Fragment>
     );
   }

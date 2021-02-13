@@ -9,7 +9,8 @@ function BeerDetails(props) {
     border: '12px black',
     padding: '34px',
     borderStyle:'groove',
-    borderRadius: '30%/ 100%'
+    borderRadius: '30%/ 100%',
+    float: 'left'
   }
   return(
     <React.Fragment>
