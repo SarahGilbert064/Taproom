@@ -25,4 +25,20 @@
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace; 
   }
+
+  #button {
+    float: left;
+
+  }
 }
+/* 
+border: '12px black',
+padding: '34px',
+borderStyle:'groove',
+borderRadius: '50%/100%',
+float: 'left',
+position: 'absolute',
+bottom: '0',
+height: '35%',
+width: '35%',
+margin: '100px' */

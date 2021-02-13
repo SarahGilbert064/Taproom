@@ -11,7 +11,8 @@ function Beer(props) {
     borderRadius: '30%/ 100%',
     float: 'right',
     width: '35%',
-    margin: '100px'
+    heigth: '100%',
+    margin: '10px'
   }
 
   return(

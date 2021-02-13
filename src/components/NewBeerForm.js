@@ -1,7 +1,8 @@
 import React from 'react';
 import { v4 } from 'uuid';
 import Proptypes from "prop-types";
-import ReusableForm from './ResuableForm';
+import ReusableForm from './ReusableForm';
+
 
 function NewBeerForm(props) {
 

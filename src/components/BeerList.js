@@ -6,7 +6,6 @@ function BeerList(props) {
   
   return(
     <React.Fragment>
-      <hr/>
       {props.beerList.map((beer) =>
         <Beer
           whenBeerClicked = {props.onBeerSelection}
