@@ -18,7 +18,8 @@ This phase one of a two-week project that I created to help further my knowledge
 | US05 | "As the user, I want to be able to click a button to 'buy' a pint whenever one is sold. This should decrease the number of pints left by 1. Pints should not be able to go below 0." | True |
 
 ## Component Tree Diagram
-<img src="ComponentTree.png">
+
+<img src="diagram.png">
 
 </center>
 
