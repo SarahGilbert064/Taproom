@@ -12,7 +12,7 @@ function NewBeerForm(props) {
       name: event.target.name.value,
       brand: event.target.brand.value,
       price: event.target.price.value,
-      pints: event.target.pints.value,
+      pints: parseInt(event.target.pints.value),
       alcoholContent: event.target.alcoholContent.value,
       id: v4()
     });

@@ -44,6 +44,10 @@ This phase one of a two-week project that I created to help further my knowledge
 
 In the project directory, you can run:
 
+### `npm install`
+
+This will install all dependencies needed for this application.
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
